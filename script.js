@@ -31,3 +31,9 @@ function onClickStart() {
         displayNumbers(fromValInteger, toValInteger);
     }
 }
+function onClickReset() {
+    counterTextEl.textContent = "";
+    fromUserInputEl.value = "";
+    toUserInputEl.value = "";
+    clearInterval(timerId);
+}
